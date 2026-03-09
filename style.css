@@ -1,0 +1,211 @@
+/* login page start*/
+.login-page {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fc08e8;
+}
+
+.login-page .container {
+    width: 320px;
+    padding: 40px;
+    background: rgb(247, 219, 3);
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.login-page h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-page input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.login-page .forgot {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: blue;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.login-page .forgot:hover {
+    color: rgb(255, 0, 0);
+    transform: scale(1.05);
+
+}
+
+.login-page button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 50px;
+    border: none;
+    background-color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-page button:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transform: scale(1.05);
+}
+
+.login-page .register {
+    margin-top: 20px;
+    font-size: 14px;
+   
+}
+
+.login-page .register a {
+    color: rgba(0, 0, 255, 0.822);
+    text-decoration: none;
+    font-weight: 600;
+   
+
+}
+
+.login-page .register a:hover {
+    color: rgb(255, 0, 0);
+    
+
+}
+
+/*login page end*/
+/*login page end*/
+/*login page end*/
+/*login page end*/
+
+
+/*start signin page */
+
+/* sign in page */
+
+.sign-in{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background-color:#fc08e8;
+}
+
+.sign-in .container{
+width:320px;
+padding:40px;
+background:rgb(247,219,3);
+text-align:center;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.sign-in h2{
+margin-bottom:20px;
+color:#000;
+font-family:'Montserrat',sans-serif;
+}
+
+.name-box{
+display:flex;
+gap:15px;
+}
+
+.name-box input{
+width:100%;
+padding:10px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:14px;
+}
+
+
+
+.sign-in input[type="tel"]{
+width:100%;
+padding:10px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:14px;
+}
+
+
+
+.sign-in #dob{
+width:100%;
+padding:10px;
+border:1px solid #ccc;
+border-radius:6px;
+margin-top:10px;
+}
+
+
+
+.gender-section{
+text-align:left;
+margin-top:15px;
+}
+
+.gender-section h3{
+font-weight:500;
+margin-bottom:8px;
+}
+
+
+
+.gender-options{
+display:flex;
+gap:25px;
+align-items:center;
+}
+
+.gender-options label{
+font-size:20px;
+display:flex;
+align-items:center;
+gap:8px;
+cursor:pointer;
+}
+
+
+
+.gender-options input[type="radio"]{
+transform:scale(1.7);
+cursor:pointer;
+}
+
+
+
+.sign-in button{
+width:100%;
+padding:12px;
+margin-top:20px;
+background:#667eea;
+color:white;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.sign-in button:hover{
+background:#4b5bdc;
+transform:scale(1.03);
+}
