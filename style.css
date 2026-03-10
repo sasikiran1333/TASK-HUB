@@ -5,23 +5,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fc08e8;
+    background: linear-gradient(135deg,#8B5CF6,#EC4899);
 }
 
 .login-page .container {
     width: 320px;
     padding: 40px;
-    background: rgb(247, 219, 3);
+    background:  rgba(255,255,255,0.2);
     text-align: center;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
+.login-page .container:hover{
+transform: scale(1.1);
+transition:0.5s;
+}
+
 .login-page h2 {
-    font-size: 32px;
-    margin-bottom: 25px;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
+    font-size:32px;
+    margin-bottom:25px;
+    font-weight:700;
+    font-family:'Montserrat', sans-serif;
+    color:white;
+    text-align:center;
+    text-shadow:0 4px 15px rgba(0,0,0,0.3);
+
 }
 
 .login-page input {
@@ -30,6 +39,7 @@
     margin-bottom: 15px;
     border-radius: 8px;
     border: none;
+    background: rgba(255,255,255,0.8);
     font-size: 15px;
     box-sizing: border-box;
 }
@@ -37,15 +47,15 @@
 .login-page .forgot {
     display: block;
     text-align: right;
-    font-size: 14px;
+    font-size: 17px;
     margin-bottom: 20px;
-    color: blue;
+    color:rgb(53, 53, 53);
     text-decoration: none;
-    transition: 0.5s;
+    
 }
 
 .login-page .forgot:hover {
-    color: rgb(255, 0, 0);
+    color: pink;
     transform: scale(1.05);
 
 }
@@ -55,34 +65,29 @@
     padding: 12px;
     border-radius: 50px;
     border: none;
-    background-color: white;
+    background:rgba(255,255,255,0.2);
     font-weight: 600;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .login-page button:hover {
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: rgb(168, 4, 154);
+    color: pink;
     transform: scale(1.05);
 }
 
-.login-page .register {
-    margin-top: 20px;
-    font-size: 14px;
-   
-}
 
 .login-page .register a {
-    color: rgba(0, 0, 255, 0.822);
+    color: #000;
     text-decoration: none;
-    font-weight: 600;
+    
    
 
 }
 
 .login-page .register a:hover {
-    color: rgb(255, 0, 0);
+    color:pink;
     
 
 }
@@ -97,107 +102,122 @@
 
 /* sign in page */
 
-.sign-in{
-margin:0;
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-background-color:#fc08e8;
+.sign-in {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background: linear-gradient(135deg,#8B5CF6,#EC4899);
+    
 }
 
-.sign-in .container{
-width:320px;
-padding:40px;
-background:rgb(247,219,3);
-text-align:center;
-border-radius:12px;
-box-shadow:0 8px 20px rgba(0,0,0,0.2);
+.sign-in .container {
+    width: 320px;
+    padding: 40px;
+    background: rgba(255,255,255,0.2);;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-.sign-in h2{
-margin-bottom:20px;
-color:#000;
-font-family:'Montserrat',sans-serif;
+
+.sign-in .container:hover{
+transform: scale(1.1);
+transition:0.5s;
+}
+
+.sign-in h1 {
+    font-size:32px;
+    margin-bottom:25px;
+    font-weight:700;
+    font-family:'Montserrat', sans-serif;
+    color:white;
+    text-align:center;
+    text-shadow:0 4px 15px rgba(0,0,0,0.3);
+
+}
+
+
+.sign-in input[type="text"]{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255,255,255,0.8);
+    font-size: 15px;
+    box-sizing: border-box;
 }
 
 .name-box{
 display:flex;
-gap:15px;
+gap:20px;
+width:115%;
 }
-
-.name-box input{
-width:100%;
-padding:10px;
-border:1px solid #ccc;
-border-radius:6px;
-font-size:14px;
-}
-
-
 
 .sign-in input[type="tel"]{
-width:100%;
+width:102%;
 padding:10px;
 margin:10px 0;
+background: rgba(255,255,255,0.8);
 border:1px solid #ccc;
 border-radius:6px;
 font-size:14px;
 }
 
 
+
+
+.sign-in label{
+padding-right: 250px;
+font-weight: 500;
+font-size: 18px;
+padding-left:7px;
+}
+
+.sign-in span,.sign-in input[type="radio"]{
+cursor: pointer;
+font-size:20px;
+
+transition: 0.001s;
+font-weight: 100;
+margin:0px 8px;
+
+
+}
+
+.sign-in span,.sign-in input[type="radio"]:hover{
+    transform: scale(1.7);
+
+}
+
+
+
+h3{
+    text-align:left;
+    font-weight: 500;
+    padding-left: 7px;
+}
 
 .sign-in #dob{
 width:100%;
 padding:10px;
+background: rgba(255,255,255,0.8);
 border:1px solid #ccc;
 border-radius:6px;
-margin-top:10px;
+margin-top:0vh;
+font-size: 18px;
+cursor: pointer;
 }
-
-
-
-.gender-section{
-text-align:left;
-margin-top:15px;
-}
-
-.gender-section h3{
-font-weight:500;
-margin-bottom:8px;
-}
-
-
-
-.gender-options{
-display:flex;
-gap:25px;
-align-items:center;
-}
-
-.gender-options label{
-font-size:20px;
-display:flex;
-align-items:center;
-gap:8px;
-cursor:pointer;
-}
-
-
-
-.gender-options input[type="radio"]{
-transform:scale(1.7);
-cursor:pointer;
-}
-
 
 
 .sign-in button{
-width:100%;
+width:106%;
 padding:12px;
 margin-top:20px;
-background:#667eea;
-color:white;
+background:rgba(255,255,255,0.2);
+color:black;
 border:none;
 border-radius:6px;
 font-size:16px;
@@ -205,7 +225,95 @@ cursor:pointer;
 transition:0.3s;
 }
 
+
 .sign-in button:hover{
-background:#4b5bdc;
+background:rgb(168, 4, 154);
 transform:scale(1.03);
+color: pink;
 }
+
+/*end sign in page 1*/
+
+
+/*start signin page 2*/
+/*start signin page 2*/
+/*start signin page 2*/
+
+.sign-in2 {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#8B5CF6,#EC4899);
+}
+
+.sign-in2 .container {
+    width: 320px;
+    padding: 40px;
+    background: rgba(255,255,255,0.2);
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.sign-in2 .container:hover{
+transform: scale(1.1);
+transition:0.5s;
+}
+
+.sign-in2 h2 {
+    font-size:32px;
+    margin-bottom:25px;
+    font-weight:700;
+    font-family:'Montserrat', sans-serif;
+    color:white;
+    text-align:center;
+    text-shadow:0 4px 15px rgba(0,0,0,0.3);
+
+}
+.sign-in2 input {
+    width: 104%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255,255,255,0.8);
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.sign-in2 .forgot {
+    display: block;
+    text-align: right;
+    font-size: 17px;
+    margin-bottom: 20px;
+    color:rgb(53, 53, 53);
+    text-decoration: none;
+    
+}
+
+.sign-in2 .forgot:hover {
+    color: pink;
+    transform: scale(1.05);
+
+}
+
+
+.sign-in2 button {
+   width: 100%;
+    padding: 12px;
+    border-radius: 50px;
+    border: none;
+    background:rgba(255,255,255,0.2);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sign-in2 button:hover {
+    background-color: rgb(168, 4, 154);
+    color: pink;
+    transform: scale(1.05);
+}
+
