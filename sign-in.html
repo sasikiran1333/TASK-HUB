@@ -12,7 +12,7 @@
 
 <body class="sign-in">
 
-<form class="container">
+<form class="container" action="sign-in2.html">
 
 <h1>TASKHUB</h1>
 
@@ -26,16 +26,17 @@ pattern="[0-9]{10}" required><br>
 
 <label>Gender:</label><br><br>
 
-<span><input type="radio" name="gender" required> Male</span>
-<span><input type="radio" name="gender" required> Female</span>
-<span><input type="radio" name="gender" required> Other</span><br>
+<span><input type="radio" name="gender" value="male" required> Male</span>
+<span><input type="radio" name="gender" value="Female" required> Female</span>
+<span><input type="radio" name="gender" value="Other" required> Other</span><br>
 
 <h3>Select Date of Birth:</h3>
 <input type="date" id="dob" placeholder="DD-MM-YYYY" required><br>
 
-<a href="sign-in2.html">
-<button>NEXT</button></a>
+
+<button type="submit">NEXT</button>
+
+
 </form>
-<h1>working</h1>
 </body>
 </html>
