@@ -12,17 +12,15 @@
 
 <body class="sign-in">
 
-<form class="container" action="sign-in2.html">
+<form class="container" novalidate>
 
 <h1>TASKHUB</h1>
 
 <div class="name-box">
-<input type="text" name="firstname" placeholder="First Name" required>
-<input type="text" name="lastname" placeholder="Last Name" required><br><br>
+<input type="text" name="email" placeholder="email" required>
+<br><br>
 </div>
 
-<input type="tel" name="phone" placeholder="+91 Phone Number"
-pattern="[0-9]{10}" required><br>
 
 <label>Gender:</label><br><br>
 
@@ -32,9 +30,21 @@ pattern="[0-9]{10}" required><br>
 
 <h3>Select Date of Birth:</h3>
 <input type="date" id="dob" placeholder="DD-MM-YYYY" required><br>
+<p>Captcha Verification</p>
+
+<canvas id="captchaCanvas" width="150" height="30"></canvas>
+
+<br>
+
+<input type="text" id="captchaInput" placeholder="Enter captcha">
+
+<br>
+
+<button class ="cap" onclick="validateCaptcha()">Verify</button>
+<button class ="cap" onclick="generateCaptcha()">Refresh</button>
 
 
-<button type="submit">NEXT</button>
+<button type="submit"><a herf="sign-in2.html">SEND OTP</button></a>
 
 
 </form>

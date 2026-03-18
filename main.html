@@ -9,9 +9,27 @@
 <body class="main">
 
 <header>
-  <h2>TASKHUB</h2>
-  <button><a href="log-in.html">login</a></button>
-  </header>
+  
+<span>TASKHUB</span>
+
+<button onclick="menu.style.display =menu.style.display=='block'?'none':'block'">n</button>
+<span id="menu" style="display:none">
+<a href="#">Profile</a><br><br>
+<a href="#">Settings</a><br><br>
+<a href="#">Logout</a>
+
+</span> 
+  </button>
+  
+  </header><br><br>
+  <nav>
+    <a hre="#">All</a>
+    <a hre="#">Completed</a>
+    <a hre="#">Incompleted</a>
+    <a hre="#">Delete</a>
+  </nav><br><br>
+
+
 <div class="container">
 <input type="text" placeholder="Enter task">
 <button>Add</button>

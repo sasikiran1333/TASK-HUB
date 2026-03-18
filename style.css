@@ -60,7 +60,7 @@ transition:0.5s;
 
 }
 
-.login-page button {
+.login-page button[type="submit"] {
     width: 100%;
     padding: 12px;
     border-radius: 50px;
@@ -114,7 +114,7 @@ transition:0.5s;
 
 .sign-in .container {
     width: 320px;
-    padding: 40px;
+    padding:0px 75px 40px 75px;
     background: rgba(255,255,255,0.2);;
     text-align: center;
     border-radius: 12px;
@@ -179,7 +179,6 @@ padding-left:7px;
 .sign-in span,.sign-in input[type="radio"]{
 cursor: pointer;
 font-size:20px;
-
 transition: 0.001s;
 font-weight: 100;
 margin:0px 8px;
@@ -206,13 +205,12 @@ padding:10px;
 background: rgba(255,255,255,0.8);
 border:1px solid #ccc;
 border-radius:6px;
-margin-top:0vh;
 font-size: 18px;
 cursor: pointer;
 }
 
 
-.sign-in button{
+.sign-in button[type="submit"]{
 width:106%;
 padding:12px;
 margin-top:20px;
@@ -317,3 +315,108 @@ transition:0.5s;
     transform: scale(1.05);
 }
 
+/*end sign-in2*/
+
+
+/*start main page*/
+/*start main page*/
+/*start main page*/
+
+.main {
+    
+    background: linear-gradient(135deg,#8B5CF6,#EC4899);
+}
+
+.main .container {
+    width: 360px;
+    padding: 40px;
+    background:  rgba(255,255,255,0.2);
+    margin: 100px auto;
+    display: flex;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.main .container:hover{
+transform: scale(1.1);
+transition:0.5s;
+}
+
+.main header span {
+    font-size:40px;
+    margin: 75px;
+    padding-top: 20px;
+    font-weight:700;
+    font-family:'Montserrat', sans-serif;
+    color:white;
+    text-shadow:0 4px 15px rgba(0,0,0,0.3);
+
+}
+
+.main header button {
+   float: right;
+     width:auto;
+     height: auto;
+     margin-right:155px;
+     margin-top:20px;
+     padding: 5px 10px;
+    border-radius:100%;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.main header #menu a {
+    text-decoration: none;
+
+}
+
+.main header  #menu{
+    color:white;
+    padding: 20px;
+    font-size:15px;
+    width:100px; 
+    background-color:rgb(194, 88, 255);
+    text-align: center;
+    right:0px;
+    position:absolute;
+    border-radius:5px;
+}
+
+.main nav{
+    text-align:center;
+    
+
+}
+
+.main nav a{
+    padding: 50px;
+    font-size:20px;
+    align-content: center;
+    cursor:pointer;
+}
+
+.main input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255,255,255,0.8);
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.main .container button{
+    margin:10px;
+    padding:5px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+button .cap{
+
+    background-color: #8B5CF6;
+}
