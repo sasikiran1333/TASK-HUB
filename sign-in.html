@@ -12,7 +12,7 @@
 
 <body class="sign-in">
 
-<form class="container" novalidate>
+<form class="container" action="sign-in2.html"> 
 
 <h1>TASKHUB</h1>
 
@@ -20,7 +20,6 @@
 <input type="text" name="email" placeholder="email" required>
 <br><br>
 </div>
-
 
 <label>Gender:</label><br><br>
 
@@ -36,16 +35,14 @@
 
 <br>
 
-<input type="text" id="captchaInput" placeholder="Enter captcha">
+<input type="text" id="captchaInput" placeholder="Enter captcha" required> 
 
 <br>
 
-<button class ="cap" onclick="validateCaptcha()">Verify</button>
-<button class ="cap" onclick="generateCaptcha()">Refresh</button>
+<a>Verify</a>
+<a>Refresh</a>
 
-
-<button type="submit"><a herf="sign-in2.html">SEND OTP</button></a>
-
+<button type="submit">next</button>
 
 </form>
 </body>
