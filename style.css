@@ -138,37 +138,6 @@ transition:0.5s;
 
 }
 
-
-.sign-in input[type="text"]{
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    border: none;
-    background: rgba(255,255,255,0.8);
-    font-size: 15px;
-    box-sizing: border-box;
-}
-
-.name-box{
-display:flex;
-gap:20px;
-width:115%;
-}
-
-.sign-in input[type="tel"]{
-width:102%;
-padding:10px;
-margin:10px 0;
-background: rgba(255,255,255,0.8);
-border:1px solid #ccc;
-border-radius:6px;
-font-size:14px;
-}
-
-
-
-
 .sign-in label{
 padding-right: 250px;
 font-weight: 500;
@@ -199,7 +168,7 @@ h3{
     padding-left: 7px;
 }
 
-.sign-in #dob{
+.sign-in [type="date"]{
 width:100%;
 padding:10px;
 background: rgba(255,255,255,0.8);
@@ -207,8 +176,31 @@ border:1px solid #ccc;
 border-radius:6px;
 font-size: 18px;
 cursor: pointer;
+
 }
 
+.sign-in a{
+padding:0px 20px;
+cursor: pointer;
+font:900;
+font-size: 17px;
+}
+
+.sign-in a:hover{
+    color:azure;
+}
+
+.sign-in input[type="text"]{
+    width: 106%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255,255,255,0.8);
+    font-size: 15px;
+    box-sizing: border-box;
+
+}
 
 .sign-in button[type="submit"]{
 width:106%;
@@ -217,6 +209,7 @@ margin-top:20px;
 background:rgba(255,255,255,0.2);
 color:black;
 border:none;
+font-weight:700;
 border-radius:6px;
 font-size:16px;
 cursor:pointer;
