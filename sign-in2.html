@@ -7,20 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="sign-in2">
-    <form class="container" action="log-in.html">
+    <form class="container" action="log-in.html" onsubmit="return pass()">
 
     <h2>TASKHUB</h2>
 
     
-
-    <input type="password" name="password" placeholder="Password" required><br>
-
-    <input type="password" name="password" placeholder="Confirm Password" required><br>
-
-    <a href="#" class="forgot">Forgot password?</a>
+    <div>
+    <input type="password" name="password"  id="pass1" placeholder="Password" required>
+    <span onclick="show(this)">🔒</span></div>
+        <div>
+    <input type="password" name="password" id="pass2" placeholder="Confirm Password" required>
+    <span onclick="show(this)">🔒</span></div><br><br>
+    
 
     <button type="submit">SIGNIN</button>
 
 </form>
+<script src="script.js"></script>
 </body>
 </html>

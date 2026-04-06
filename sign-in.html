@@ -12,12 +12,12 @@
 
 <body class="sign-in">
 
-<form class="container" action="sign-in2.html"> 
+<form class="container" action="sign-in2.html" onsubmit="return verifyCaptcha()"> 
 
 <h1>TASKHUB</h1>
 
 
-<input type="email" name="email"  id="emali" placeholder="email" required>
+<input type="email" name="email" placeholder="email" required>
 <br>
 
 <label>Gender:</label><br>
@@ -30,20 +30,20 @@
 <input type="date" id="dob" placeholder="DD-MM-YYYY" required><br>
 <h4>Captcha Verification</h4>
 
-<canvas width="150" height="30"></canvas>
+<canvas id="captcha" width="150" height="40"></canvas>
 
 <br>
-<a>Refresh</a><br><br>
+<a href="#" onclick="generateCaptcha()">Refresh</a>
 
-<input type="text"  placeholder="Enter captcha" required> 
+<input type="text" id="captchaInput" placeholder="Enter captcha" required>
 
 <br>
 
-<a>Verify</a>
+<a href="#">Verify</a>
 
 
 <button type="submit">NEXT</button>
-<script src="scrpit.js"></script>
+<script src="script.js"></script>
 </form>
 </body>
 </html>
