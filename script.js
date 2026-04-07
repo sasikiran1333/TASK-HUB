@@ -17,7 +17,7 @@ function pass(){
     if (pa.value===ps.value){
         return true;
     }else{
-        alert("passwords do not match");
+        alert("passwords do not match ❌");
             return false;
     }
 }
@@ -56,3 +56,14 @@ return false;
 }
 
 window.onload = generateCaptcha;
+
+function menu(){
+let list=document.getElementById("menu");
+
+if(list.style.display==="block"){
+    list.style.display="none";
+}else{
+    list.style.display="block";
+}
+
+}
