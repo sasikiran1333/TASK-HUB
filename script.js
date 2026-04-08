@@ -67,3 +67,15 @@ if(list.style.display==="block"){
 }
 
 }
+
+function add(){
+let input=document.getElementById("input").value;
+if(input==="")return;
+let li=document.createElement("li");
+li.innerHTML=input;
+document.getElementById("list").appendChild(li);
+
+document.getElementById("input").value = "";
+
+
+}
