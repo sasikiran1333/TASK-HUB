@@ -1,3 +1,4 @@
+/*show password*/
 function show(icon){
 let pass=icon.previousElementSibling;
     if(pass.type==="password"){
@@ -10,7 +11,7 @@ let pass=icon.previousElementSibling;
     }
     }
 
-
+/*password match*/
 function pass(){
     let pa=document.getElementById("pass1");
     let ps=document.getElementById("pass2");
@@ -22,7 +23,7 @@ function pass(){
     }
 }
 
-
+/*captcha*/
 let captchaText = "";
 
 function generateCaptcha(){
@@ -67,7 +68,7 @@ if(list.style.display==="block"){
 }
 
 }
-
+/*add to list*/
 function add(){
 let input=document.getElementById("input").value;
 if(input==="")return;
