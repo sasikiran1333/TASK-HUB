@@ -416,8 +416,10 @@ transition:0.5s;
 }
 
 .main nav a{
-    padding: 50px;
+    padding:0px 70px;
     font-size:20px;
+    text-decoration: none;
+    color:black;
     align-content: center;
     cursor:pointer;
     
