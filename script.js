@@ -55,19 +55,44 @@ generateCaptcha();
 return false;
 }
 }
-
 window.onload = generateCaptcha;
 
+
+/*loin btn*/
 function menu(){
 let list=document.getElementById("menu");
-
-if(list.style.display==="block"){
+    if(list.style.display==="block"){
     list.style.display="none";
-}else{
+    }else{
     list.style.display="block";
+    }
+
+}
+/* show first letter after login */
+window.onload = function(){
+
+let email = localStorage.getItem("email");
+
+if(email){
+let firstLetter = email.charAt(0).toUpperCase();
+document.getElementById("loginbtn").innerHTML = firstLetter;
 }
 
 }
+
+
+/* save login */
+function login(){
+
+let email = document.getElementById("email").value;
+
+localStorage.setItem("email", email);
+
+window.location.href = "main.html";
+
+return false; 
+}
+
 /*add to list*/
 function add(){
 let input=document.getElementById("input").value;
