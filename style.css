@@ -19,7 +19,7 @@
 
 .login-page .container:hover{
 transform: scale(1.1);
-transition:0.5s;
+transition:0.1s;
 }
 
 .login-page h2 {
@@ -134,7 +134,7 @@ transition:0.5s;
 
 .sign-in .container:hover{
 transform: scale(1.1);
-transition:0.5s;
+transition:0.1s;
 }
 
 .sign-in h1 {
@@ -281,7 +281,7 @@ color: pink;
 
 .sign-in2 .container:hover{
 transform: scale(1.1);
-transition:0.5s;
+transition:0.1s;
 }
 
 .sign-in2 h2 {
@@ -360,7 +360,7 @@ transition:0.5s;
 
 .main .container:hover{
 transform: scale(1.1);
-transition:0.5s;
+transition:0.1s;
 }
 
 .main header span {
