@@ -30,7 +30,7 @@ function generateCaptcha(){
 let canvas = document.getElementById("captcha");
 let ctx = canvas.getContext("2d");
 
-let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 captchaText = "";
 
 for(let i=0;i<5;i++){
@@ -106,4 +106,10 @@ document.getElementById("input").value = "";
 
 }
 
-/*login button change*/
+/*click to change table*/
+function ope(){
+style.display="block";
+alert("hello");
+}
+
+
